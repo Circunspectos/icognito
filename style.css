@@ -1,0 +1,60 @@
+.card {
+    background-color: rgb(32, 32, 32);
+    color: white;
+}
+.btn.btn-primary1 {
+    color: white;
+    background-color: rgb(48, 48, 48);
+}
+#container2 {
+    justify-content: center;
+    justify-items: center;
+    text-justify: auto;
+    display: none;
+}
+.btn.btn-primary {
+    padding-left: 6px;
+    padding-right: 6px;
+    margin-top: 10px;
+    position: absolute;
+    right: 10px;
+    justify-content: center;
+    justify-items: center;
+}
+@font-face {
+    font-family: 'forkawesome';
+    src: url('forkawesome.woff2');
+}
+#container2 h1 {
+    font-family: 'forkawesome', sans-serif;;
+    padding-left: 20px;
+    padding-top: 10px;
+    text-align: left;
+    margin: 0 0 0 0;
+    font-size: 25px;
+    color: white;
+}
+.main {
+    width: 100%;
+    display: flex;
+    position: relative;
+    text-align: right;
+    background-color: rgb(23, 23, 23);
+    height: 60px;
+}
+.form-group {
+    margin: 10px;
+}
+.card-body {
+    padding: 5px;
+}
+body {
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    background-color: rgb(37, 36, 36);
+}
+ul li {
+    list-style: none;
+}

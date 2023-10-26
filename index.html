@@ -3,23 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Login</title>
+    <title>Icognito</title>
     <!-- Incluindo o Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <style>
-        ul li {
-            list-style: none;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <div id="container">
         <div class="row justify-content-center mt-5">
             <div class="col-md-4">
                 <div class="card">
-                    <div class="card-header">Login</div>
                     <div class="card-body">
                         <form id="login-form">
+                            <div class="card-header">Login</div>
                             <div class="form-group">
                                 <label for="usuario">Usuário:</label>
                                 <input type="text" class="form-control" id="usuario" name="usuario" required>
@@ -28,18 +24,23 @@
                                 <label for="senha">Senha:</label>
                                 <input type="password" class="form-control" id="senha" name="senha" required>
                             </div>
-                            <button type="submit" class="btn btn-primary">Entrar</button>
+                            <button type="submit" class="btn btn-primary1">Entrar</button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
+<form id="container2">
+    <div class="main">
+    <h1>Icognito</h1>
+    <button class="btn btn-primary">Upload</button>
+    </div>
+</form>
     <!-- Incluindo o Bootstrap e jQuery JavaScript (necessário para Bootstrap) -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
     <!-- Seu script.js aqui -->
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
