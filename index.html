@@ -34,7 +34,9 @@
 <form id="container2">
     <div class="main">
     <h1>Icognito</h1>
-    <button class="btn btn-primary">Upload</button>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" id="file" style="display: none;">
+        <button type="file" name="submit" class="btn btn-primary">Upload</button>
     </div>
 </form>
     <!-- Incluindo o Bootstrap e jQuery JavaScript (necessário para Bootstrap) -->
