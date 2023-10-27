@@ -1,6 +1,6 @@
 <?php
-if (isset($_POST['submit'])) {
-    $uploadDirectory = 'uploads/';
+if (isset($_FILES['file'])) {
+    $uploadDirectory = '/';
 
     if (!file_exists($uploadDirectory)) {
         mkdir($uploadDirectory, 0777, true);
