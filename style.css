@@ -1,8 +1,20 @@
+#main-title {
+    color: white;
+}
+.row.justify-content-center.mt-5 {
+    width: 100%;
+}
+#login-form {
+    position: relative;
+    display: block;
+}
 .card {
     background-color: rgb(32, 32, 32);
     color: white;
+    margin: 100px auto;
 }
 .btn.btn-primary1 {
+    margin-left: 10px;
     color: white;
     background-color: rgb(48, 48, 48);
 }
@@ -25,15 +37,6 @@
     font-family: 'forkawesome';
     src: url('forkawesome.woff2');
 }
-#container2 h1 {
-    font-family: 'forkawesome', sans-serif;;
-    padding-left: 20px;
-    padding-top: 10px;
-    text-align: left;
-    margin: 0 0 0 0;
-    font-size: 25px;
-    color: white;
-}
 .main {
     width: 100%;
     display: flex;
@@ -42,11 +45,26 @@
     background-color: rgb(23, 23, 23);
     height: 60px;
 }
+.main h1 {
+    position: absolute;
+    left: 20px;
+    top: 7px;
+    font-family: 'forkawesome', sans-serif;;
+    text-align: left;
+    margin: 0 0 0 0;
+    font-size: 35px;
+    color: white;    
+}
 .form-group {
     margin: 10px;
+    margin-bottom: 20px;
 }
 .card-body {
-    padding: 5px;
+    padding: 10px auto;
+}
+input {
+    display: block;
+    margin: 10px auto;
 }
 body {
     padding: 0;

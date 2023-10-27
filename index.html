@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="main">
+        <h1>icognito</h1>
+        </div>    
     <div id="container">
         <div class="row justify-content-center mt-5">
             <div class="col-md-4">
@@ -31,13 +34,10 @@
             </div>
         </div>
     </div>
-<form id="container2">
-    <div class="main">
-    <h1>Icognito</h1>
-    <form action="upload.php" method="post" enctype="multipart/form-data">
-        <input type="file" name="file" id="file" style="display: none;">
-        <button type="file" name="submit" class="btn btn-primary">Upload</button>
-    </div>
+    <form id="container2" action="upload.php" method="post" enctype="multipart/form-data">
+        <label for="upload_file">Selecione um arquivo:</label>
+        <input type="file" name="file">
+        <input type="submit" name="acao" value="Enviar">
 </form>
     <!-- Incluindo o Bootstrap e jQuery JavaScript (necessário para Bootstrap) -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

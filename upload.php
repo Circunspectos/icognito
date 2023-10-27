@@ -1,17 +1,15 @@
 <?php
-if (isset($_FILES['file'])) {
-    $uploadDirectory = '/';
+if(isset($_POST['acao'])){
+    $arquivo = $_FILES['file'];
 
-    if (!file_exists($uploadDirectory)) {
-        mkdir($uploadDirectory, 0777, true);
-    }
+    $arquivoNovo = explode('.',$arquivo['name']);
 
-    $targetFile = $uploadDirectory . basename($_FILES['file']['name']);
-
-    if (move_uploaded_file($_FILES['file']['tmp_name'], $targetFile)) {
-        echo 'Arquivo foi enviado com sucesso.';
-    } else {
-        echo 'Ocorreu um erro durante o envio do arquivo.';
+    if($arquivoNovo[sizeof($arquivoNovo)-1] != 'jpg'){
+        die('nao pode uploadar essa merda krl');
+    }else{
+        echo 'uploadado com sucesso';
+        move_uploaded_file($arquivo['tmp_name'],'uploads/'.$arquivo['name']);
+        
     }
 }
 ?>

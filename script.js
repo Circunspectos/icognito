@@ -2,6 +2,7 @@ document.getElementById("login-form").addEventListener("submit", function(event)
     event.preventDefault();
     const usuario = document.getElementById("usuario").value;
     const senha = document.getElementById("senha").value;
+    
     if (usuario === "t" && senha === "t") {
         alert("Login bem-sucedido!");
 
@@ -16,11 +17,3 @@ document.getElementById("login-form").addEventListener("submit", function(event)
         alert("Credenciais inválidas. Tente novamente.");
     }
 });
-
-function previewImage(imageUrl) {
-    // Lógica para visualização de imagem
-}
-
-function downloadFile(fileUrl) {
-    // Lógica para download de arquivo
-}
